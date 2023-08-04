@@ -1,0 +1,152 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Admin manager
+  style.
+    body {
+    background-color: #F3F3F3;
+    }
+    .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    nav {
+    display: flex;
+    width: 80%;
+    height: 10vh;
+    background-color: #FFFF;
+    margin: 0 0 3% 10%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    nav img {
+    height: 80%;
+    width: auto;
+    margin: 1vh 0 0 1VW;
+    }
+    #home {
+    color: #7AB730;
+    }
+    .textNav {
+    display: flex;
+    flex-direction: column;
+    margin: 1.4vh 0 0 1vw;
+    font-size: 2.5vh;
+    }
+    #text1 {
+    margin-left: 0.8vw;
+    }
+    .Dropdown {
+    position: relative;
+    display: inline-block;
+    }
+    .DropdownContent {
+    display: none;
+    position: absolute;
+    top: 4vh;
+    background-color: #f9f9f9;
+    min-width: 15vw;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    }
+    .DropdownContent a {
+    color: black;
+    padding: 1vh 0.5vw;
+    text-decoration: none;
+    display: block;
+    }
+    .DropdownContent a:hover {
+    background-color: #F1F1F1;
+    }
+    .Dropdown:hover .DropdownContent {
+    display: block;
+    }
+    .contentNav {
+    display: flex;
+    margin: 3.5vh 0 0 21vw;
+    text-decoration: none;
+    font-size: 2.5vh;
+    }
+    .contentNav a {
+    margin-left: 1.5vw;
+    text-decoration: none;
+    color: #000;
+    }
+    main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 100vh;
+    background-color: #FFFF;
+    margin: 0 0 0 25%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+    main h2 {
+    font-size: 1.5vw;
+    text-align: center;
+    }
+    main label {
+    font-size: 1.2vw;
+    margin: 1vh 0 0 3vw;
+    }
+    main input {
+    margin-left: 3vw;
+    width: 42vw;
+    height: 10ch;
+    }
+    main a {
+    font-size: 1.2vw;
+    border: 1px solid #FFFF;
+    border-radius: 12vw;
+    margin: 1vh 0 1vh 1vw;
+    text-decoration: none;
+    width: 14vw;
+    padding: 0.3vw;
+    background-color: #7AB730;
+    color: #FFFF;
+    }
+.flex
+  nav
+    img(src='/img/spvc logo.png' alt='')
+    .textNav
+      span#text1 &#xE23;&#xE30;&#xE1A;&#xE1A;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23;&#xE02;&#xE49;&#xE2D;&#xE21;&#xE39;&#xE25;&#xE28;&#xE34;&#xE29;&#xE22;&#xE4C;&#xE40;&#xE01;&#xE48;&#xE32;
+      span &#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE2D;&#xE32;&#xE0A;&#xE35;&#xE27;&#xE28;&#xE36;&#xE01;&#xE29;&#xE32;&#xE2A;&#xE38;&#xE1E;&#xE23;&#xE23;&#xE13;&#xE1A;&#xE38;&#xE23;&#xE35;
+    .contentNav
+      a#home(href='') &#xE2B;&#xE19;&#xE49;&#xE32;&#xE41;&#xE23;&#xE01;
+      .Dropdown
+        a.DropdownMain(href='') &#xE01;&#xE32;&#xE23;&#xE08;&#xE31;&#xE14;&#xE01;&#xE32;&#xE23;
+        .DropdownContent
+          a(href='') &#xE04;&#xE49;&#xE19;&#xE2B;&#xE32;&#xE02;&#xE49;&#xE2D;&#xE21;&#xE39;&#xE25;&#xE28;&#xE34;&#xE29;&#xE22;&#xE4C;&#xE40;&#xE01;&#xE48;&#xE32;
+          a(href='') &#xE04;&#xE31;&#xE14;&#xE01;&#xE23;&#xE2D;&#xE07;&#xE02;&#xE49;&#xE2D;&#xE21;&#xE39;&#xE25;&#xE28;&#xE34;&#xE29;&#xE22;&#xE4C;&#xE40;&#xE01;&#xE48;&#xE32;
+          a(href='') &#xE41;&#xE01;&#xE49;&#xE44;&#xE02;&#xE02;&#xE49;&#xE2D;&#xE21;&#xE39;&#xE25;&#xE28;&#xE34;&#xE29;&#xE22;&#xE4C;&#xE40;&#xE01;&#xE48;&#xE32;
+      a(href='') &#xE04;&#xE27;&#xE32;&#xE21;&#xE0A;&#xE48;&#xE27;&#xE22;&#xE40;&#xE2B;&#xE25;&#xE37;&#xE2D;
+      a(href='') &#xE1A;&#xE31;&#xE0D;&#xE0A;&#xE35;&#xE1C;&#xE39;&#xE49;&#xE43;&#xE0A;&#xE49;
+      a(href='') &#xE2D;&#xE2D;&#xE01;&#xE08;&#xE32;&#xE01;&#xE23;&#xE30;&#xE1A;&#xE1A;
+  main
+    h2 &#xE15;&#xE23;&#xE27;&#xE08;&#xE2A;&#xE2D;&#xE1A;&#xE02;&#xE49;&#xE2D;&#xE21;&#xE39;&#xE25;
+    label(for='') &#xE27;&#xE31;&#xE19;/&#xE40;&#xE14;&#xE37;&#xE2D;&#xE19;/&#xE1B;&#xE35; &#xE17;&#xE35;&#xE48;&#xE2A;&#xE48;&#xE07;&#xE02;&#xE49;&#xE2D;&#xE21;&#xE39;&#xE25;&#xE21;&#xE32; : 
+    input(type='text' value= data[0].date disabled='')
+    label(for='') &#xE23;&#xE2B;&#xE31;&#xE2A;&#xE1A;&#xE31;&#xE15;&#xE23;&#xE1B;&#xE23;&#xE30;&#xE08;&#xE33;&#xE15;&#xE31;&#xE27;&#xE1B;&#xE23;&#xE30;&#xE0A;&#xE32;&#xE0A;&#xE19; : 
+    input(type='text' value= data[0].idCard disabled='')
+    label(for='') &#xE40;&#xE1E;&#xE28; : 
+    input(type='text' value= data[0].sex disabled='')
+    label(for='') &#xE0A;&#xE37;&#xE48;&#xE2D; - &#xE19;&#xE32;&#xE21;&#xE2A;&#xE01;&#xE38;&#xE25; (&#xE20;&#xE32;&#xE29;&#xE32;&#xE44;&#xE17;&#xE22;) : 
+    input(type='text' value=  data[0].title + data[0].firstName + " " + data[0].lastName disabled='')
+    label(for='') &#xE0A;&#xE37;&#xE48;&#xE2D; - &#xE19;&#xE32;&#xE21;&#xE2A;&#xE01;&#xE38;&#xE25; (&#xE20;&#xE32;&#xE29;&#xE32;&#xE2D;&#xE31;&#xE07;&#xE01;&#xE24;&#xE29;) : 
+    input(type='text' value=  data[0].firstName_Eng + " " + data[0].lastName_Eng disabled='')
+    label(for='') &#xE0A;&#xE37;&#xE48;&#xE2D;&#xE40;&#xE25;&#xE48;&#xE19; : 
+    input(type='text' value= data[0].nickName disabled='')
+    label(for='') &#xE0A;&#xE37;&#xE48;&#xE2D;&#xE01;&#xE25;&#xE32;&#xE07; : 
+    input(type='text' value= data[0].middleName disabled='')
+    label(for='') &#xE40;&#xE1A;&#xE2D;&#xE23;&#xE4C;&#xE42;&#xE17;&#xE23;&#xE28;&#xE31;&#xE1E;&#xE17;&#xE4C; : 
+    input(type='text' value= data[0].telephoneNumber disabled='')
+    label(for='') &#xE2D;&#xE35;&#xE40;&#xE21;&#xE25; : 
+    input(type='text' value= data[0].email disabled='')
+    label(for='') &#xE41;&#xE1C;&#xE19;&#xE01;&#xE27;&#xE34;&#xE0A;&#xE32; : 
+    input(type='text' value= data[0].department disabled='')
+    label(for='') &#xE1B;&#xE35;&#xE17;&#xE35;&#xE48;&#xE08;&#xE1A;&#xE01;&#xE32;&#xE23;&#xE28;&#xE36;&#xE01;&#xE29;&#xE32; : 
+    input(type='text' value= data[0].yearGraduation disabled='')
+    a(href='/adminManager') &#xE01;&#xE25;&#xE31;&#xE1A;&#xE40;&#xE02;&#xE49;&#xE32;&#xE2A;&#xE39;&#xE48;&#xE2B;&#xE19;&#xE49;&#xE32;&#xE04;&#xE31;&#xE14;&#xE01;&#xE23;&#xE2D;&#xE07;&#xE02;&#xE49;&#xE2D;&#xE21;&#xE39;&#xE25;

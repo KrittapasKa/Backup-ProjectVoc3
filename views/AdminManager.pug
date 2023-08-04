@@ -1,0 +1,158 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Admin manager
+style.
+  body {
+  background-color: #F3F3F3;
+  }
+  .flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+  nav {
+  display: flex;
+  width: 80%;
+  height: 10vh;
+  background-color: #FFFF;
+  margin: 0 0 5% 10%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  nav img {
+  height: 80%;
+  width: auto;
+  margin: 1vh 0 0 1VW;
+  }
+  #home {
+  color: #7AB730;
+  }
+  .textNav {
+  display: flex;
+  flex-direction: column;
+  margin: 1.4vh 0 0 1vw;
+  font-size: 2.5vh;
+  }
+  #text1 {
+  margin-left: 0.8vw;
+  }
+  .Dropdown {
+  position: relative;
+  display: inline-block;
+  }
+  .DropdownContent {
+  display: none;
+  position: absolute;
+  top: 4vh;
+  background-color: #f9f9f9;
+  min-width: 15vw;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  }
+  .DropdownContent a {
+  color: black;
+  padding: 1vh 0.5vw;
+  text-decoration: none;
+  display: block;
+  }
+  .DropdownContent a:hover {
+  background-color: #F1F1F1;
+  }
+  .Dropdown:hover .DropdownContent {
+  display: block;
+  }
+  .contentNav {
+  display: flex;
+  margin: 3.5vh 0 0 21vw;
+  text-decoration: none;
+  font-size: 2.5vh;
+  }
+  .contentNav a {
+  margin-left: 1.5vw;
+  text-decoration: none;
+  color: #000;
+  }
+  main {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: #FFFF;
+  margin: 0 0 0 5%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  main h2 {
+  text-align: center;
+  }
+  table {
+  width: 80vw;
+  margin: 0 0 5vh 10vh;
+  }
+  table,
+  th,
+  td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  }
+  thead {
+  height: 7vh;
+  text-align: center;
+  color: white;
+  background-color: #7AB730;
+  }
+  tbody {
+  text-align: center;
+  }
+  tbody tr:hover {
+  background-color: #00000026;
+  }
+  #check {
+  background-color: #0B5ED7;
+  }
+  #approve {
+  background-color: #157347;
+  }
+  #refuse {
+  background-color: #BB2D3B;
+  }
+  td a {
+  color: #FFF;
+  text-decoration: none;
+  }
+.flex
+  nav
+    img(src='/img/spvc logo.png' alt='')
+    .textNav
+      span#text1 ระบบจัดการข้อมูลศิษย์เก่า
+      span วิทยาลัยอาชีวศึกษาสุพรรณบุรี
+    .contentNav
+      a#home(href='') หน้าแรก
+      .Dropdown
+        a.DropdownMain(href='') การจัดการ
+        .DropdownContent
+          a(href='/s') ค้นหาข้อมูลศิษย์เก่า
+          a(href='/s2') คัดกรองข้อมูลศิษย์เก่า
+          a(href='/3') แก้ไขข้อมูลศิษย์เก่า
+      a(href='/4') ความช่วยเหลือ
+      a(href='')= username
+      a(href='/logout') ออกจากระบบ
+  main
+    h2 การคัดกรองข้อมูล
+    table
+      thead
+        tr
+          th ชื่อ - นามสกุล
+          th วัน/เดือน/ปี ที่ส่งข้อมูลมา
+          th(colspan='3') การกระทำ
+      tbody
+      each val in data
+        tr
+          td= val.title + val.firstName + " " + val.lastName
+          td= val.date
+          td#check
+            a(href='/adminManager/check/' + val.dataID) ตรวจสอบ
+          td#approve
+            a(href='/adminManager/approve/' + val.dataID) อนุมัติ
+          td#refuse
+            a(href='/adminManager/refuse/' + val.dataID) ปฎิเสธ

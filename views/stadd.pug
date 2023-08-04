@@ -1,0 +1,383 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title &#xE07;&#xE32;&#xE19;&#xE41;&#xE19;&#xE30;&#xE41;&#xE19;&#xE27; &#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE2D;&#xE32;&#xE0A;&#xE35;&#xE27;&#xE28;&#xE36;&#xE01;&#xE29;&#xE32;&#xE2A;&#xE38;&#xE1E;&#xE23;&#xE23;&#xE13;&#xE1A;&#xE38;&#xE23;&#xE35;
+  meta(content='width=device-width, initial-scale=1.0' name='viewport')
+  meta(content='Free HTML Templates' name='keywords')
+  meta(content='Free HTML Templates' name='description')
+  // Favicon
+  link(href='img/favicon.ico' rel='icon')
+  // Google Web Fonts
+  link(rel='preconnect' href='https://fonts.gstatic.com')
+  link(href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap' rel='stylesheet')
+  // Font Awesome
+  link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css' rel='stylesheet')
+  // Libraries Stylesheet
+  link(href='lib/owlcarousel/assets/owl.carousel.min.css' rel='stylesheet')
+  link(href='lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped&display=swap' rel='stylesheet')
+  // Customized Bootstrap Stylesheet
+  link(href='css/style.css' rel='stylesheet')
+style.
+  body {
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  }
+// Topbar Start
+.container-fluid.bg-light.pt-3.d-none.d-lg-block
+  .container
+    .row
+      .col-lg-6.text-center.text-lg-left.mb-2.mb-lg-0
+        .d-inline-flex.align-items-center
+          p
+            i.fa.fa-envelope.mr-2
+            | spvcinfo@spvc.ac.th
+          p.text-body.px-3 |
+          p
+            i.fa.fa-phone-alt.mr-2
+            | 0-3551-1355
+      .col-lg-6.text-center.text-lg-right
+        .d-inline-flex.align-items-center
+          a.text-primary.px-3(href='')
+            i.fab.fa-facebook-f
+          a.text-primary.px-3(href='')
+            i.fab.fa-twitter
+          a.text-primary.px-3(href='')
+            i.fab.fa-linkedin-in
+          a.text-primary.px-3(href='')
+            i.fab.fa-instagram
+          a.text-primary.pl-3(href='')
+            i.fab.fa-youtube
+// Topbar End
+// Navbar Start
+.container-fluid.position-relative.nav-bar.p-0
+  .container-lg.position-relative.p-0.px-lg-3(style='z-index: 9;')
+    nav.navbar.navbar-expand-lg.bg-light.navbar-light.shadow-lg.py-3.py-lg-0.pl-3.pl-lg-5
+      img(src='img/spvc logo.png' width='50' height='50')
+      a.navbar-brand(href='')
+        h1.m-0.text-primary
+          span.text-dark
+          |งานแนะแนว
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarCollapse')
+        span.navbar-toggler-icon
+      #navbarCollapse.collapse.navbar-collapse.justify-content-between.px-3
+        .navbar-nav.ml-auto.py-0
+          a.nav-item.nav-link.active(href='index') หน้าแรก
+          .nav-item.dropdown
+            a.nav-link.dropdown-toggle(href='#' data-toggle='dropdown') ศิษย์เก่า
+            .dropdown-menu.border-0.rounded-0.m-0
+              a.dropdown-item(href='stex') ศิษย์เก่าดีเด่น
+              a.dropdown-item(href='stsearch') ข้อมูลศิษย์เก่า
+              a.dropdown-item(href='stadd') เพิ่มข้อมูลศิษย์เก่า
+          a.nav-item.nav-link(href='/stadd#Contact') ติดต่อ
+          a.nav-item.nav-link(href='login') เข้าสู่ระบบ
+// Navbar End
+// Header Start
+.container-fluid.page-header
+  .container
+    .d-flex.flex-column.align-items-center.justify-content-center(style='min-height: 400px')  
+// Header End
+.container-fluid.py-5
+  .container.pt-5.pb-3
+    .text-center.mb-3.pb-3
+      h1 &#xE40;&#xE1E;&#xE34;&#xE48;&#xE21;&#xE02;&#xE49;&#xE2D;&#xE21;&#xE39;&#xE25;&#xE28;&#xE34;&#xE29;&#xE22;&#xE4C;&#xE40;&#xE01;&#xE48;&#xE32; &#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE2D;&#xE32;&#xE0A;&#xE35;&#xE27;&#xE28;&#xE36;&#xE01;&#xE29;&#xE32;&#xE2A;&#xE38;&#xE1E;&#xE23;&#xE23;&#xE13;&#xE1A;&#xE38;&#xE23;&#xE35;
+      h6.text-primary.text-uppercase(style='letter-spacing: 5px;') &#xE27;&#xE34;&#xE17;&#xE22;&#xE32;&#xE25;&#xE31;&#xE22;&#xE2D;&#xE32;&#xE0A;&#xE35;&#xE27;&#xE28;&#xE36;&#xE01;&#xE29;&#xE32;&#xE2A;&#xE38;&#xE1E;&#xE23;&#xE23;&#xE13;&#xE1A;&#xE38;&#xE23;&#xE35;
+    .row
+      .col-lg-12.col-md-6.mb-4
+        .bg-white.mb-3(style='padding: 30px;')
+          form(action='stadd' method='post')
+            .form-group
+              label(for='studentID') รหัสนักศึกษา
+              input#idCard.form-control(type='number' name='studentID')
+            .form-group
+              label(for='department') แผนกวิชา*
+              select#department.custom-select.px-4(name='department' style='height: 47px;' required)
+                    option(value='')
+                    option(value='วิชาการบัญชี') วิชาการบัญชี
+                    option(value='วิชาการเลขานุการ') วิชาการเลขานุการ
+                    option(value='วิชาการตลาด') วิชาการตลาด
+                    option(value='วิชาธุระกิจค้าปลีก') วิชาธุระกิจค้าปลีก
+                    option(value='วิชาคอมพิวเตอร์ธุรกิจ') วิชาคอมพิวเตอร์ธุรกิจ
+                    option(value='วิชาคอมพิวเตอร์โปรแกรมเมอร์') วิชาคอมพิวเตอร์โปรแกรมเมอร์
+                    option(value='วิชาคอมพิวเตอร์กราฟิก') วิชาคอมพิวเตอร์กราฟิก
+                    option(value='วิชาการออกแบบ') วิชาการออกแบบ
+                    option(value='วิชาการโรงแรม') วิชาการโรงแรม
+                    option(value='วิชาการท่องเที่ยว') วิชาการท่องเที่ยว
+                    option(value='วิชาอาหารและโภชนาการ') วิชาอาหารและโภชนาการ
+                    option(value='วิชาผ้าและสิ่งทอ') วิชาผ้าและสิ่งทอ
+                    option(value='วิชาคหกรรม') วิชาคหกรรม
+            .form-group
+              label(for='yearGraduation') ปีที่จบการศึกษา (พุทธศักราช)*
+              input#yearGraduation.form-control(type='number' name='yearGraduation' requested='' required)
+            .form-group
+              label(for='idCard') รหัสบัตรประชาชน*
+              input#idCard.form-control(type='number' name='idCard' required)
+            .form-group
+              label(for='sex') เพศ*
+              select#sex.custom-select.px-4(name='sex' style='height: 47px;' required)
+                    option(value='')
+                    option(value='ชาย') ชาย
+                    option(value='หญิง') หญิง
+                    option(value='ไม่ระบุ') ไม่ระบุ
+            .form-group
+              label(for='title') คำนำหน้า*
+              select#title.custom-select.px-4(name='title' style='height: 47px;' required)
+                    option(value='')
+                    option(value='นาย') &#xE19;&#xE32;&#xE22;
+                    option(value='นาง') &#xE19;&#xE32;&#xE07;
+                    option(value='น.ส.') &#xE19;&#xE32;&#xE07;&#xE2A;&#xE32;&#xE27;
+                    option(value='พล.ต.อ.') &#xE1E;&#xE25;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE40;&#xE2D;&#xE01;
+                    option(value='พล.ต.อ. หญิง') &#xE1E;&#xE25;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE40;&#xE2D;&#xE01; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พล.ต.ท') &#xE1E;&#xE25;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE42;&#xE17;
+                    option(value='พล.ต.ท หญิง') &#xE1E;&#xE25;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE42;&#xE17; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พล.ต.ต') &#xE1E;&#xE25;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE15;&#xE23;&#xE35;
+                    option(value='พล.ต.ต หญิง') &#xE1E;&#xE25;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE15;&#xE23;&#xE35; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พ.ต.อ.') &#xE1E;&#xE31;&#xE19;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE40;&#xE2D;&#xE01;
+                    option(value='พ.ต.อ. หญิง') &#xE1E;&#xE31;&#xE19;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE40;&#xE2D;&#xE01; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พ.ต.อ.(พิเศษ)') &#xE1E;&#xE31;&#xE19;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE40;&#xE2D;&#xE01;&#xE1E;&#xE34;&#xE40;&#xE28;&#xE29;
+                    option(value='พ.ต.อ.(พิเศษ) หญิง') &#xE1E;&#xE31;&#xE19;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE40;&#xE2D;&#xE01;&#xE1E;&#xE34;&#xE40;&#xE28;&#xE29; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พ.ต.ท.') &#xE1E;&#xE31;&#xE19;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE42;&#xE17;
+                    option(value='พ.ต.ท. หญิง') &#xE1E;&#xE31;&#xE19;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE42;&#xE17; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พ.ต.ต.') &#xE1E;&#xE31;&#xE19;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE15;&#xE23;&#xE35;
+                    option(value='พ.ต.ต. หญิง') &#xE1E;&#xE31;&#xE19;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE15;&#xE23;&#xE35; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ร.ต.อ.') &#xE23;&#xE49;&#xE2D;&#xE22;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE40;&#xE2D;&#xE01;
+                    option(value='ร.ต.อ. หญิง') &#xE23;&#xE49;&#xE2D;&#xE22;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE40;&#xE2D;&#xE01; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ร.ต.ท.') &#xE23;&#xE49;&#xE2D;&#xE22;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE42;&#xE17;
+                    option(value='ร.ต.ท. หญิง') &#xE23;&#xE49;&#xE2D;&#xE22;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE42;&#xE17; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ร.ต.ต.') &#xE23;&#xE49;&#xE2D;&#xE22;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE15;&#xE23;&#xE35;
+                    option(value='ร.ต.ต. หญิง') &#xE23;&#xE49;&#xE2D;&#xE22;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE15;&#xE23;&#xE35; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ด.ต.') &#xE19;&#xE32;&#xE22;&#xE14;&#xE32;&#xE1A;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;
+                    option(value='ด.ต. หญิง') &#xE14;&#xE32;&#xE1A;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ส.ต.อ.') &#xE2A;&#xE34;&#xE1A;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE40;&#xE2D;&#xE01;
+                    option(value='ส.ต.อ. หญิง') &#xE2A;&#xE34;&#xE1A;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE40;&#xE2D;&#xE01; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ส.ต.ท.') &#xE2A;&#xE34;&#xE1A;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE42;&#xE17;
+                    option(value='ส.ต.ท. หญิง') &#xE2A;&#xE34;&#xE1A;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE42;&#xE17; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ส.ต.ต.') &#xE2A;&#xE34;&#xE1A;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE15;&#xE23;&#xE35;
+                    option(value='ส.ต.ต. หญิง') &#xE2A;&#xE34;&#xE1A;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;&#xE15;&#xE23;&#xE35; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='จ.ส.ต.') &#xE08;&#xE48;&#xE32;&#xE2A;&#xE34;&#xE1A;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;
+                    option(value='จ.ส.ต. หญิง') &#xE08;&#xE48;&#xE32;&#xE2A;&#xE34;&#xE1A;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พลฯ') &#xE1E;&#xE25;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08;
+                    option(value='พลฯ หญิง') &#xE1E;&#xE25;&#xE15;&#xE33;&#xE23;&#xE27;&#xE08; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พล.อ.') &#xE1E;&#xE25;&#xE40;&#xE2D;&#xE01;
+                    option(value='พล.อ. หญิง') &#xE1E;&#xE25;&#xE40;&#xE2D;&#xE01; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พล.ท.') &#xE1E;&#xE25;&#xE42;&#xE17;
+                    option(value='พล.ท. หญิง') &#xE1E;&#xE25;&#xE42;&#xE17; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พล.ต.') &#xE1E;&#xE25;&#xE15;&#xE23;&#xE35;
+                    option(value='พล.ต.หญิง') &#xE1E;&#xE25;&#xE15;&#xE23;&#xE35; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พ.อ.') &#xE1E;&#xE31;&#xE19;&#xE40;&#xE2D;&#xE01;
+                    option(value='พ.อ.หญิง') &#xE1E;&#xE31;&#xE19;&#xE40;&#xE2D;&#xE01; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พ.อ.(พิเศษ)') &#xE1E;&#xE31;&#xE19;&#xE40;&#xE2D;&#xE01;&#xE1E;&#xE34;&#xE40;&#xE28;&#xE29;
+                    option(value='พ.อ.(พิเศษ) หญิง') &#xE1E;&#xE31;&#xE19;&#xE40;&#xE2D;&#xE01;&#xE1E;&#xE34;&#xE40;&#xE28;&#xE29; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พ.ท.') &#xE1E;&#xE31;&#xE19;&#xE42;&#xE17;
+                    option(value='พ.ท.หญิง') &#xE1E;&#xE31;&#xE19;&#xE42;&#xE17; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พ.ต.') &#xE1E;&#xE31;&#xE19;&#xE15;&#xE23;&#xE35;
+                    option(value='พ.ต.หญิง') &#xE1E;&#xE31;&#xE19;&#xE15;&#xE23;&#xE35; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ร.อ.') &#xE23;&#xE49;&#xE2D;&#xE22;&#xE40;&#xE2D;&#xE01;
+                    option(value='ร.อ.หญิง') &#xE23;&#xE49;&#xE2D;&#xE22;&#xE40;&#xE2D;&#xE01; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ร.ท.') &#xE23;&#xE49;&#xE2D;&#xE22;&#xE42;&#xE17;
+                    option(value='ร.ท.หญิง') &#xE23;&#xE49;&#xE2D;&#xE22;&#xE42;&#xE17; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ร.ต.') &#xE23;&#xE49;&#xE2D;&#xE22;&#xE15;&#xE23;&#xE35;
+                    option(value='ร.ต.หญิง') &#xE23;&#xE49;&#xE2D;&#xE22;&#xE15;&#xE23;&#xE35; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ส.อ.') &#xE2A;&#xE34;&#xE1A;&#xE40;&#xE2D;&#xE01;
+                    option(value='ส.อ.หญิง') &#xE2A;&#xE34;&#xE1A;&#xE40;&#xE2D;&#xE01; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ส.ท.') &#xE2A;&#xE34;&#xE1A;&#xE42;&#xE17;
+                    option(value='ส.ท.หญิง') &#xE2A;&#xE34;&#xE1A;&#xE42;&#xE17; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ส.ต.') &#xE2A;&#xE34;&#xE1A;&#xE15;&#xE23;&#xE35;
+                    option(value='ส.ต.หญิง') &#xE2A;&#xE34;&#xE1A;&#xE15;&#xE23;&#xE35; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='จ.ส.อ.') &#xE08;&#xE48;&#xE32;&#xE2A;&#xE34;&#xE1A;&#xE40;&#xE2D;&#xE01;
+                    option(value='จ.ส.อ.หญิง') &#xE08;&#xE48;&#xE32;&#xE2A;&#xE34;&#xE1A;&#xE40;&#xE2D;&#xE01; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='จ.ส.ท.') &#xE08;&#xE48;&#xE32;&#xE2A;&#xE34;&#xE1A;&#xE42;&#xE17;
+                    option(value='จ.ส.ท.หญิง') &#xE08;&#xE48;&#xE32;&#xE2A;&#xE34;&#xE1A;&#xE42;&#xE17; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='จ.ส.ต.') &#xE08;&#xE48;&#xE32;&#xE2A;&#xE34;&#xE1A;&#xE15;&#xE23;&#xE35;
+                    option(value='จ.ส.ต.หญิง') &#xE08;&#xE48;&#xE32;&#xE2A;&#xE34;&#xE1A;&#xE15;&#xE23;&#xE35; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พลฯ') &#xE1E;&#xE25;&#xE17;&#xE2B;&#xE32;&#xE23;&#xE1A;&#xE01;
+                    option(value='ว่าที่ พ.ต.') &#xE27;&#xE48;&#xE32;&#xE17;&#xE35;&#xE48; &#xE1E;.&#xE15;.
+                    option(value='ว่าที่ พ.ต. หญิง') &#xE27;&#xE48;&#xE32;&#xE17;&#xE35;&#xE48; &#xE1E;.&#xE15;. &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ว่าที่ ร.อ.') &#xE27;&#xE48;&#xE32;&#xE17;&#xE35;&#xE48; &#xE23;.&#xE2D;.
+                    option(value='ว่าที่ ร.อ. หญิง') &#xE27;&#xE48;&#xE32;&#xE17;&#xE35;&#xE48; &#xE23;.&#xE2D;. &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ว่าที่ ร.ท.') &#xE27;&#xE48;&#xE32;&#xE17;&#xE35;&#xE48; &#xE23;.&#xE17;.
+                    option(value='ว่าที่ ร.ท. หญิง') &#xE27;&#xE48;&#xE32;&#xE17;&#xE35;&#xE48; &#xE23;.&#xE17;. &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ว่าที่ ร.ต.') &#xE27;&#xE48;&#xE32;&#xE17;&#xE35;&#xE48; &#xE23;.&#xE15;.
+                    option(value='ว่าที่ ร.ต. หญิง') &#xE27;&#xE48;&#xE32;&#xE17;&#xE35;&#xE48; &#xE23;.&#xE15;. &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พล.ร.อ.') &#xE1E;&#xE25;&#xE40;&#xE23;&#xE37;&#xE2D;&#xE40;&#xE2D;&#xE01;
+                    option(value='พล.ร.อ.หญิง') &#xE1E;&#xE25;&#xE40;&#xE23;&#xE37;&#xE2D;&#xE40;&#xE2D;&#xE01; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พล.ร.ท.') &#xE1E;&#xE25;&#xE40;&#xE23;&#xE37;&#xE2D;&#xE42;&#xE17;
+                    option(value='พล.ร.ท.หญิง') &#xE1E;&#xE25;&#xE40;&#xE23;&#xE37;&#xE2D;&#xE42;&#xE17; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พล.ร.ต.') &#xE1E;&#xE25;&#xE40;&#xE23;&#xE37;&#xE2D;&#xE15;&#xE23;&#xE35;
+                    option(value='พล.ร.ต.หญิง') &#xE1E;&#xE25;&#xE40;&#xE23;&#xE37;&#xE2D;&#xE15;&#xE23;&#xE35; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='น.อ.') &#xE19;&#xE32;&#xE27;&#xE32;&#xE40;&#xE2D;&#xE01;
+                    option(value='น.อ.หญิง') &#xE19;&#xE32;&#xE27;&#xE32;&#xE40;&#xE2D;&#xE01; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='น.อ.(พิเศษ)') &#xE19;&#xE32;&#xE27;&#xE32;&#xE40;&#xE2D;&#xE01;&#xE1E;&#xE34;&#xE40;&#xE28;&#xE29;
+                    option(value='น.อ.(พิเศษ) หญิง') &#xE19;&#xE32;&#xE27;&#xE32;&#xE40;&#xE2D;&#xE01;&#xE1E;&#xE34;&#xE40;&#xE28;&#xE29; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='น.ท.') &#xE19;&#xE32;&#xE27;&#xE32;&#xE42;&#xE17;
+                    option(value='น.ท.หญิง') &#xE19;&#xE32;&#xE27;&#xE32;&#xE42;&#xE17; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='น.ต.') &#xE19;&#xE32;&#xE27;&#xE32;&#xE15;&#xE23;&#xE35;
+                    option(value='น.ต.หญิง') &#xE19;&#xE32;&#xE27;&#xE32;&#xE15;&#xE23;&#xE35; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ร.อ.') &#xE40;&#xE23;&#xE37;&#xE2D;&#xE40;&#xE2D;&#xE01;
+                    option(value='ร.อ.หญิง') &#xE40;&#xE23;&#xE37;&#xE2D;&#xE40;&#xE2D;&#xE01; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ร.ท.') &#xE40;&#xE23;&#xE37;&#xE2D;&#xE42;&#xE17;
+                    option(value='ร.ท.หญิง') &#xE40;&#xE23;&#xE37;&#xE2D;&#xE42;&#xE17; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ร.ต.') &#xE40;&#xE23;&#xE37;&#xE2D;&#xE15;&#xE23;&#xE35;
+                    option(value='ร.ต.หญิง') &#xE40;&#xE23;&#xE37;&#xE2D;&#xE15;&#xE23;&#xE35; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พ.จ.อ.') &#xE1E;&#xE31;&#xE19;&#xE08;&#xE48;&#xE32;&#xE40;&#xE2D;&#xE01;
+                    option(value='พ.จ.อ.หญิง') &#xE1E;&#xE31;&#xE19;&#xE08;&#xE48;&#xE32;&#xE40;&#xE2D;&#xE01; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พ.จ.ท.') &#xE1E;&#xE31;&#xE19;&#xE08;&#xE48;&#xE32;&#xE42;&#xE17;
+                    option(value='พ.จ.ท.หญิง') &#xE1E;&#xE31;&#xE19;&#xE08;&#xE48;&#xE32;&#xE42;&#xE17; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พ.จ.ต.') &#xE1E;&#xE31;&#xE19;&#xE08;&#xE48;&#xE32;&#xE15;&#xE23;&#xE35;
+                    option(value='พ.จ.ต.หญิง') &#xE1E;&#xE31;&#xE19;&#xE08;&#xE48;&#xE32;&#xE15;&#xE23;&#xE35; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='จ.อ.') &#xE08;&#xE48;&#xE32;&#xE40;&#xE2D;&#xE01;
+                    option(value='จ.อ.หญิง') &#xE08;&#xE48;&#xE32;&#xE40;&#xE2D;&#xE01; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='จ.ท.') &#xE08;&#xE48;&#xE32;&#xE42;&#xE17;
+                    option(value='จ.ท.หญิง') &#xE08;&#xE48;&#xE32;&#xE42;&#xE17; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='จ.ต.') &#xE08;&#xE48;&#xE32;&#xE15;&#xE23;&#xE35;
+                    option(value='จ.ต.หญิง') &#xE08;&#xE48;&#xE32;&#xE15;&#xE23;&#xE35; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พลฯ') &#xE1E;&#xE25;&#xE17;&#xE2B;&#xE32;&#xE23;&#xE40;&#xE23;&#xE37;&#xE2D;
+                    option(value='พล.อ.อ.') &#xE1E;&#xE25;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE40;&#xE2D;&#xE01;
+                    option(value='พล.อ.อ.หญิง') &#xE1E;&#xE25;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE40;&#xE2D;&#xE01; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พล.อ.ท.') &#xE1E;&#xE25;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE42;&#xE17;
+                    option(value='พล.อ.ท.หญิง') &#xE1E;&#xE25;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE42;&#xE17; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พล.อ.ต.') &#xE1E;&#xE25;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE15;&#xE23;&#xE35;
+                    option(value='พล.อ.ต.หญิง') &#xE1E;&#xE25;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE15;&#xE23;&#xE35; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='น.อ.') &#xE19;&#xE32;&#xE27;&#xE32;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE40;&#xE2D;&#xE01;
+                    option(value='น.อ.หญิง') &#xE19;&#xE32;&#xE27;&#xE32;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE40;&#xE2D;&#xE01; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='น.อ.(พิเศษ)') &#xE19;&#xE32;&#xE27;&#xE32;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE40;&#xE2D;&#xE01;&#xE1E;&#xE34;&#xE40;&#xE28;&#xE29;
+                    option(value='น.อ.(พิเศษ) หญิง') &#xE19;&#xE32;&#xE27;&#xE32;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE40;&#xE2D;&#xE01;&#xE1E;&#xE34;&#xE40;&#xE28;&#xE29; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='น.ท.') &#xE19;&#xE32;&#xE27;&#xE32;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE42;&#xE17;
+                    option(value='น.ท.หญิง') &#xE19;&#xE32;&#xE27;&#xE32;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE42;&#xE17; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='น.ต.') &#xE19;&#xE32;&#xE27;&#xE32;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE15;&#xE23;&#xE35;
+                    option(value='น.ต.หญิง') &#xE19;&#xE32;&#xE27;&#xE32;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE15;&#xE23;&#xE35; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ร.อ.') &#xE40;&#xE23;&#xE37;&#xE2D;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE40;&#xE2D;&#xE01;
+                    option(value='ร.อ.หญิง') &#xE40;&#xE23;&#xE37;&#xE2D;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE40;&#xE2D;&#xE01; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ร.ท.') &#xE40;&#xE23;&#xE37;&#xE2D;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE42;&#xE17;
+                    option(value='ร.ท.หญิง') &#xE40;&#xE23;&#xE37;&#xE2D;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE42;&#xE17; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='ร.ต.') &#xE40;&#xE23;&#xE37;&#xE2D;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE15;&#xE23;&#xE35;
+                    option(value='ร.ต.หญิง') &#xE40;&#xE23;&#xE37;&#xE2D;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE15;&#xE23;&#xE35; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พ.อ.อ.') &#xE1E;&#xE31;&#xE19;&#xE08;&#xE48;&#xE32;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE40;&#xE2D;&#xE01;
+                    option(value='พ.อ.อ.หญิง') &#xE1E;&#xE31;&#xE19;&#xE08;&#xE48;&#xE32;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE40;&#xE2D;&#xE01; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พ.อ.ท.') &#xE1E;&#xE31;&#xE19;&#xE08;&#xE48;&#xE32;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE42;&#xE17;
+                    option(value='พ.อ.ท.หญิง') &#xE1E;&#xE31;&#xE19;&#xE08;&#xE48;&#xE32;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE42;&#xE17; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พ.อ.ต.') &#xE1E;&#xE31;&#xE19;&#xE08;&#xE48;&#xE32;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE15;&#xE23;&#xE35;
+                    option(value='พ.อ.ต.หญิง') &#xE1E;&#xE31;&#xE19;&#xE08;&#xE48;&#xE32;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE15;&#xE23;&#xE35; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='จ.อ.') &#xE08;&#xE48;&#xE32;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE40;&#xE2D;&#xE01;
+                    option(value='จ.อ.หญิง') &#xE08;&#xE48;&#xE32;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE40;&#xE2D;&#xE01; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='จ.ท.') &#xE08;&#xE48;&#xE32;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE42;&#xE17;
+                    option(value='จ.ท.หญิง') &#xE08;&#xE48;&#xE32;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE42;&#xE17; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='จ.ต.') &#xE08;&#xE48;&#xE32;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE15;&#xE23;&#xE35;
+                    option(value='จ.ต.หญิง') &#xE08;&#xE48;&#xE32;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;&#xE15;&#xE23;&#xE35; &#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='พลฯ') &#xE1E;&#xE25;&#xE17;&#xE2B;&#xE32;&#xE23;&#xE2D;&#xE32;&#xE01;&#xE32;&#xE28;
+                    option(value='หม่อม') &#xE2B;&#xE21;&#xE48;&#xE2D;&#xE21;
+                    option(value='ม.จ.') &#xE2B;&#xE21;&#xE48;&#xE2D;&#xE21;&#xE40;&#xE08;&#xE49;&#xE32;
+                    option(value='ม.ร.ว.') &#xE2B;&#xE21;&#xE48;&#xE2D;&#xE21;&#xE23;&#xE32;&#xE0A;&#xE27;&#xE07;&#xE28;&#xE4C;
+                    option(value='ม.ล.') &#xE2B;&#xE21;&#xE48;&#xE2D;&#xE21;&#xE2B;&#xE25;&#xE27;&#xE07;
+                    option(value='ดร.') &#xE14;&#xE23;.
+                    option(value='ศ.ดร.') &#xE28;.&#xE14;&#xE23;.
+                    option(value='ศ.') &#xE28;.
+                    option(value='ผศ.ดร.') &#xE1C;&#xE28;.&#xE14;&#xE23;.
+                    option(value='ผศ.') &#xE1C;&#xE28;.
+                    option(value='รศ.ดร.') &#xE23;&#xE28;.&#xE14;&#xE23;.
+                    option(value='รศ.') &#xE23;&#xE28;.
+                    option(value='นพ.') &#xE19;&#xE1E;.
+                    option(value='พญ.') &#xE41;&#xE1E;&#xE17;&#xE22;&#xE4C;&#xE2B;&#xE0D;&#xE34;&#xE07;
+                    option(value='นสพ.') &#xE2A;&#xE31;&#xE15;&#xE27;&#xE41;&#xE1E;&#xE17;&#xE22;&#xE4C;
+                    option(value='สพญ.') &#xE2A;&#xE1E;&#xE0D;.
+                    option(value='ทพ.') &#xE17;&#xE1E;.
+                    option(value='ทพญ.') &#xE17;&#xE1E;&#xE0D;.
+                    option(value='ภก.') &#xE40;&#xE20;&#xE2A;&#xE31;&#xE0A;&#xE01;&#xE23;
+                    option(value='ภกญ.') &#xE20;&#xE01;&#xE0D;.
+                    option(value='พระ') &#xE1E;&#xE23;&#xE30;
+                    option(value='พระครู') &#xE1E;&#xE23;&#xE30;&#xE04;&#xE23;&#xE39;
+                    option(value='พระมหา') &#xE1E;&#xE23;&#xE30;&#xE21;&#xE2B;&#xE32;
+                    option(value='พระสมุห์') &#xE1E;&#xE23;&#xE30;&#xE2A;&#xE21;&#xE38;&#xE2B;&#xE4C;
+                    option(value='พระอธิการ') &#xE1E;&#xE23;&#xE30;&#xE2D;&#xE18;&#xE34;&#xE01;&#xE32;&#xE23;
+                    option(value='สามเณร') &#xE2A;&#xE32;&#xE21;&#xE40;&#xE13;&#xE23;
+                    option(value='แม่ชี') &#xE41;&#xE21;&#xE48;&#xE0A;&#xE35;
+                    option(value='บาทหลวง') &#xE1A;&#xE32;&#xE17;&#xE2B;&#xE25;&#xE27;&#xE07;
+                    option(value='Mr.') MR
+                    option(value='Mrs. ') MRS
+                    option(value='Ms. ') MS
+                    option(value='Miss') MISS
+                    option(value='Dr.') Dr.
+            .form-group
+              label(for='firstName') ชื่อ*
+              input#firstName.form-control(type='text' name='firstName' required)
+            .form-group
+              label(for='lastName') นามสกุล
+              input#lastName.form-control(type='text' name='lastName')
+              .form-group
+              label(for='firstName_Eng') ชื่อ (ภาษาอังกฤษ)*
+              input#firstName_Eng.form-control(type='text' name='firstName_Eng' required)
+            .form-group
+              label(for='lastName_Eng') นามสกุล (ภาษาอังกฤษ)
+              input#lastName_Eng.form-control(type='text' name='lastName_Eng')
+            .form-group
+              label(for='middleName') ชื่อกลาง
+              input#middleName.form-control(type='text' name='middleName')
+            .form-group
+              label(for='nickName') ชื่อเล่น
+              input#nickName.form-control(type='text' name='nickName')
+            .form-group
+              label(for='telephoneNumber') เบอร์โทร*
+              input#telephoneNumber.form-control(type='number' name='telephoneNumber' required)
+            .form-group
+              label(for='email') อีเมล
+              input#email.form-control(type='email' name='email' required)
+            .form-group.mb-0
+              input.btn.btn-primary.font-weight-semi-bold.py-2.px-3(type='submit' value='ส่งข้อมูลเพื่อคัดกรอง')
+script.
+  document.querySelector('form').addEventListener('submit', function(event) {
+    alert('ส่งข้อมูลเรียบร้อย');
+  });
+// Footer Start
+.container-fluid.bg-dark.text-white-50.py-5.px-sm-3.px-lg-5(style='margin-top: 90px;')
+  .row.pt-5
+    .col-lg-2
+    .col-lg-3.col-md-6.mb-5
+      a.navbar-brand(href='')
+        h3.text-primary
+          span.text-white วิทยาลัยอาชีวศึกษาสุพรรณบุรี
+      p
+        | ผลิตและพัฒนากำลังคนอาชีวศึกษา
+      p 
+        | ด้านธุรกิจและบริการตามคุณวุฒิวิชาชีพ
+    .col-lg-3.col-md-6.mb-5
+    .col-lg-3.col-md-6.mb-5
+      h5.text-white.text-uppercase.mb-4(style='letter-spacing: 5px;')#Contact ติดต่อเรา
+      p
+        | ที่อยู่ : 279 ถ.พระพันวษา ต.ท่าพี่เลี้ยง อ.เมือง จ.สุพรรณบุรี 72000
+      p
+        | โทร : 0-3551-1355
+      p
+        | แฟกซ์ : 0-3552-4022  
+      p
+        | อีเมล : spvc.info@spvc.ac.th
+      h6.text-white.text-uppercase.mt-4.mb-3(style='letter-spacing: 5px;') Follow Us
+      .d-flex.justify-content-start
+        a.btn.btn-outline-primary.btn-square.mr-2(href='#')
+          i.fab.fa-twitter
+        a.btn.btn-outline-primary.btn-square.mr-2(href='#')
+          i.fab.fa-facebook-f
+        a.btn.btn-outline-primary.btn-square.mr-2(href='#')
+          i.fab.fa-linkedin-in
+        a.btn.btn-outline-primary.btn-square(href='#')
+          i.fab.fa-instagram
+.container-fluid.bg-dark.text-white.border-top.py-4.px-sm-3.px-md-5(style='border-color: rgba(256, 256, 256, .1) !important;')
+  .row
+    .col-lg-6.text-center.text-md-left.mb-3.mb-md-0
+      p.m-0.text-white-50
+        | &copy Copyright งานศูนย์ข้อมูลสารสนเทศ วิทยาลัยอาชีวศึกษาสุพรรณบุรี
+// Footer End
+// Back to Top
+a.btn.btn-lg.btn-primary.btn-lg-square.back-to-top(href='#')
+  i.fa.fa-angle-double-up
+// JavaScript Libraries
+script(src='https://code.jquery.com/jquery-3.4.1.min.js')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js')
+script(src='lib/easing/easing.min.js')
+script(src='lib/owlcarousel/owl.carousel.min.js')
+script(src='lib/tempusdominus/js/moment.min.js')
+script(src='lib/tempusdominus/js/moment-timezone.min.js')
+script(src='lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js')
+// Contact Javascript File
+script(src='mail/jqBootstrapValidation.min.js')
+script(src='mail/contact.js')
+// Template Javascript
+script(src='js/main.js')
